@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Labb 2 - Grupp 5</title>
+    <style>
+        body {
+            background-color: #2C3E50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        form {
+            background-color: #eaebed;
+            padding: 30px;
+            border-radius: 8px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            align-self: center;
+        }
+
+        .textfield {
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .checkbox {
+            justify-self: start;
+            transform: scale(1.5);
+        }
+
+        #btnRemove {
+            grid-column: 1 / -1;
+            width: fit-content;
+        }
+
+        #divContent {
+            grid-column: 1 / -1;
+            height: 100px;
+            background-color: white;
+            border: 1px solid black;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Labb 2 - Grupp 5</h1>
+    <form>
+        <label for="color">Färg</label>
+        <input type="text" id="color" name="color" class="textfield">
+        <label for="content">Innehåll</label>
+        <input type="text" id="content" name="content" class="textfield">
+        <label for="divStyle">Stil på box</label>
+        <input type="checkbox" id="divStyle" name="divStyle" class="checkbox"></input>
+        
+        <button id="btnRemove">Ta Bort</button>
+
+        <div id="divContent"></div>
+    </form>
 </body>
 </html>
