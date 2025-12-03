@@ -1,1 +1,9 @@
 console.log("Scriptet kan laddas in");
+
+const checkbox = document.querySelector("#divStyle");
+
+const textFields = document.getElementsByClassName("textfield");
+
+const button = document.getElementById("btnRemove");
+
+const divElement = document.getElementsByTagName("div");
